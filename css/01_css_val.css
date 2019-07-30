@@ -1,0 +1,31 @@
+/* 이건 바로 CSS의 주석! */
+/* px 사용*/
+#hello {
+    font-size: 50px;
+}
+/* % 사용*/
+#welcome {
+    font-size: 50%;
+}
+/* em은 기본 크기에서 배수로 늘려주는 것 */
+#lunch {
+    font-size: 10em;
+}
+/* div는 부모 */
+div {
+    width: 50%;
+}
+/* h1은 자식, 부모의 width를 상속 받아서 결국 50% * 50% = 25%가 된다. */
+h1 {
+    width: 50%;
+}
+/* rem은 뭐양 */
+#snack {
+    font-size: 0.5rem;
+}
+/* viewport 단위!! */
+#menu {
+    background-color: red;
+    width: 50vw;
+    height: 50vh;
+}

@@ -1,0 +1,44 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+.blue {
+    background-color: blue;
+    position: static;
+}
+/* 반대야 반대~~~ 오른쪽으로 위쪽으로 50px만큼 이동함 */
+.red {
+    background-color: red;
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+}
+/* ~~~로부터 */
+.greenyellow {
+    background-color: greenyellow;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.parent {
+    height: 200px;
+    width: 100%;
+    background-color: darkcyan;
+    position: relative;
+}
+
+.children {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    background-color: cyan
+}
+
+.yellow {
+    background-color: yellow;
+    position: fixed;
+    right: 0px;
+    top: 0px;   
+}

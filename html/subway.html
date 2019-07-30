@@ -12,43 +12,54 @@
 
     <!-- form은 데이터를 넣기위한 구분 -->
     <form action="">
-        <label for="name">이름:</label>
-        <input id="name" type="text" name="name">
-        <!-- id와 for는 연결의 의미 -->
-        <!-- name : 속성명, "" : 속성값 -->
-
-        <label for="when">날짜:</label>
-        <input id="when" type="date" name="when">
-        <!-- date는 달력형식으로 날짜를 선택할 수 있음 -->
-
+        <div>
+            <label for="name">이름:</label>
+            <input id="name" type="text" name="name" placeholder="이름을 작성하세요.">
+            <!-- placeholder는 값을 직접 넣는다기 보다는 값을 넣도록 도움을 주는 역할/value는 실제 값이 들어감 -->
+            <!-- id와 for는 연결의 의미 -->
+            <!-- name : 속성명, "" : 속성값 -->
+        </div>
+        <div>
+            <label for="when">날짜:</label>
+            <input id="when" type="date" name="when">
+            <!-- date는 달력형식으로 날짜를 선택할 수 있음 -->
+        </div>
+        
         <h3>1. 샌드위치 선택</h3>
         <input id="option1" type="radio" name="main" value="1"><label for="option1">에그마요</label>
         <input id="option2" type="radio" name="main" value="2"><label for="option2">비엘티</label>
         <input id="option3" type="radio" name="main" value="3"><label for="option3">터키</label>
-        <input type="submit">
 
         <hr>
 
         <h3>2. 사이즈 선택</h3>
-        <input id="size1" type="radio" name="size" value="15"><label for="size1">15cm</label>
-        <input id="size2" type="radio" name="size" value="30"><label for="size2">30cm</label>
-        <input type="submit">
+        <input name="size" type="number" value="15" min="15" max="30" step="15">
+        <!-- <input id="size1" type="radio" name="size" value="15"><label for="size1">15cm</label> -->
+        <!-- <input id="size2" type="radio" name="size" value="30"><label for="size2">30cm</label> -->
 
         <hr>
 
         <h3>3. 빵 선택</h3>
-        <input type=""><label for="">허니오트</label>
-        <input type=""><label for="">플랫브래드</label>
-        <input type=""><label for="">하티 이탈리안</label>
+        <select name="bread" id="">
+            <option value="1">허니오트</option>
+            <option value="2">플랫브레드</option>
+            <option value="3">하티 이탈리안</option>
+        </select>
+        <!-- select는 radio랑 비슷함 -->
+        <!-- <input type=""><label for="">허니오트</label> -->
+        <!-- <input type=""><label for="">플랫브래드</label> -->
+        <!-- <input type=""><label for="">하티 이탈리안</label> -->
 
         <hr>
 
         <h3>4. 야채/소스 선택</h3>
-        <input id="opt1" type="checkbox"><label for="opt1">토마토(+300원)</label><br>
+        <!-- name이랑 id는 웬만하면 같은게 좋겠오~~ -->
+        <input id="opt1" type="checkbox" name="tomato" value="True"><label for="opt1">토마토(+300원)</label><br>
         <input id="opt2" type="checkbox"><label for="opt2">오이(+300원)</label><br>
-        <input id="opt3" type="checkbox"><label for="opt3">할라피뇨(+500원)</label><br>
+        <input id="opt3" type="checkbox"><label for="opt3">할라피뇨(+700원)</label><br>
         <input id="opt4" type="checkbox"><label for="opt4">핫칠리(+500원)</label><br>
-        <input id="opt5" type="checkbox"><label for="opt5">바베큐(+700원)</label><br>
+        <input id="opt5" type="checkbox"><label for="opt5">바베큐(+500원)</label><br>
+        <input type="submit">
     </form>
 </body>
 </html>

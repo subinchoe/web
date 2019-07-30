@@ -1,0 +1,41 @@
+div {
+    width: 100px;
+    height:100px;
+    background-color: rgba(180, 100, 200, 50);
+}
+
+.margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.padding {
+    padding-top: 20px;
+    padding-bottom : 10px;
+}
+
+.border {
+    border-width: 2px;
+    border-color: blueviolet;
+    border-style: dotted;
+    /* 위에 세 개를 축약한 것 */
+    border: 3px blueviolet dotted;
+}
+/* 상하좌우 모두 10 */
+.margin-1 {
+    margin: 10px;
+    }
+/* 상하 10 좌우 20 */
+.margin-2 {
+    margin: 10px 20px;
+}
+/* 상 10 좌우 20 하 30 */
+.margin-3 {
+    margin: 10px 20px 30px;
+}
+/* 상 10 우 20 하 30 좌 40 */
+.margin-4 {
+    margin: 10px 20px 30px 40px;
+}

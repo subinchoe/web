@@ -1,0 +1,44 @@
+/* 별은 모든 엘리먼트를 가리킴 */
+/* * {
+    color: red;
+} */
+
+/* 태그 셀렉터 */
+/* important는 최우선순위! */
+h1 {
+    color: red !important;
+}
+
+/* 그룹 */
+h1, h2 {
+    background-color: gray;
+}
+
+/* 클래스 */
+.class-selector {
+    color:blue;
+}
+
+/* 아이디 */
+#id-selector {
+    color: green;
+}
+
+/* 
+셀렉터들은 우선순위가 있다.
+id > class > tag 
+*/
+
+/* 자식 셀렉터 */
+ul > li {
+    color: pink;
+}
+/* p태그 바로 밑에 인접한 형제만 바꿔줌 */
+p + li {
+    color: greenyellow;
+}
+
+/* p태그의 형제들 모두 */
+p ~ li {
+    color: goldenrod;
+}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <h1>여기는 일제 목록입니다.</h1>
+  <!--{# {% for product in products %}
+    {{product}}
+  {% endfor %} 중괄호와 샵을 같이 써서 코드를 못 읽게 하자. #}-->
+
+  <table class="table table-primary my-5">
+    <thead>
+      <tr>
+        <th scope="col">NoNoJapan</th>
+        <th scope="col">제품명</th>
+        <th scope="col">대체상품</th>
+        <th scope="col">카테고리</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+      <tr>
+        <th scope="row">1</th>
+        <td>{{product[0]}}</td>
+        <td>{{product[2]}}</td>
+        <td>{{product[1]}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>{% endblock %}

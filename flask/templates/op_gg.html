@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <form action="/search">
+    <div class="bg-primary">
+      <div class="mx-auto" style="width:50%">
+        <div>
+          <img class="my-5" src="https://attach.s.op.gg/logo/20190730135214.bb87673d92d8dff6a5de5c104187e4b4.png" alt="">
+        </div>
+        <div class="form-group row ">
+          <input type="text" class="form-control col-11 mb-5" id="summoner" name="summoner" placeholder="소환사명"> 
+          <button type="submit" class="btn btn-primary col-1 mb-5 border border-white">.GG</button>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </form>
+  
+{% endblock %}
